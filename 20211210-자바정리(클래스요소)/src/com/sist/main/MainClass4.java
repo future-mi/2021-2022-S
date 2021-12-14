@@ -24,7 +24,7 @@ package com.sist.main;
  *  int c;
  *  ¡æ int a,b,c;
  *  
- *  int a=10;
+ *  int a=10;9
  *  int b=20;
  *  int c=30;
  * 	¡æ int a=10,b=20.c=30;
