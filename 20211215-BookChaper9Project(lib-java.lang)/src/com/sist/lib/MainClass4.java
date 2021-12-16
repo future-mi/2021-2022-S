@@ -1,12 +1,8 @@
 package com.sist.lib;
 /*
  * substring → 문자열을 자른다
- * 
  * substring(int start)
  * substring(int start,int end) : 중간에 문자열을 자르는 경우
- * 
- * 	경기도 남양주시 두물로27번길 38-16 1F
- * 
  */
 
 public class MainClass4 {
@@ -16,10 +12,11 @@ public class MainClass4 {
 		// 1.길주소만
 		String addr=address.substring(0,address.indexOf("지"));
 		// 주의점 substring(int s,int e)
-		//					int e 는 e-1까지 가지고옴
-		// substring(0,5) → 5제외 4번까지 / endIndex -1 
+		//				        ↑ int e 는 e-1까지 가지고옴
+		// substring(0,5) → 5는 제외 4번까지 / endIndex -1 
 		
 		System.out.println(addr);
+		
 		// 2.지번
 		addr=address.substring(address.lastIndexOf("지번")+3);		
 		System.out.println(addr);
@@ -31,6 +28,5 @@ public class MainClass4 {
 		System.out.println(s2);
 
 		// 원본은 그대로 유지 System.out.println(address);
-		
 	}
 }

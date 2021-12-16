@@ -21,9 +21,6 @@ public class MainClass4 {
 			if(i%4==0 && i!=0)
 			System.out.print(" ");
 			System.out.print(binary[i]);
-		}
-		
-		
-		
+		}	
 	}
 }

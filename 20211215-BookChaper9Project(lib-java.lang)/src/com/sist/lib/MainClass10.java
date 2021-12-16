@@ -32,6 +32,7 @@ public class MainClass10 {
 		String name="홍길동,박문수,심청이,이순신,강감찬";
 		String[] names=name.split(",");
 		//names={"홍길동","박문수","심청이","이순신","강감찬"};
+		
 		//출력 
 		for(String n:names)
 		{
@@ -41,7 +42,7 @@ public class MainClass10 {
 		//		
 		System.out.println("====JOIN====");
 		String ss=String.join("-",names); 	
-		// ↑static 메소드 / join으로 묶어줄수있음 / 메모리할당을 하지 않고 사용
+		// ↑ static 메소드 / join으로 묶어줄수있음 / 메모리할당을 하지 않고 사용
 		System.out.println(ss);
 		
 		StringJoiner sj=new StringJoiner("," , "[" , "]"); // 형식을 만든다

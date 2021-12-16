@@ -1,9 +1,6 @@
 package com.sist.lib;
-/*
- * indexOf
- * lastIndexOf
- */
-
+// indexOf
+// lastIndexOf
 public class MainClass3 {
 	public static void main(String[] args) {
 		String s="Hello Java!!";
@@ -13,7 +10,6 @@ public class MainClass3 {
 		
 		int j=s.lastIndexOf('a');
 		System.out.println("j="+j);
-		
 		
 		//»Æ¿Â¿⁄
 		s="c:\\javaDex\\java.basic\\Hello.java";

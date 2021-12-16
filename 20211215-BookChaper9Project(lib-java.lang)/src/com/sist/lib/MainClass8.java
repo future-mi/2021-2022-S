@@ -6,9 +6,8 @@ public class MainClass8 {
 	public static void main(String[] args) {
 		// 입력값받기
 		Scanner scan=new Scanner(System.in);
-		System.out.println("알파벳 입력창: ");
-		String data=scan.next();
-		
+		System.out.println("알파벳 입력: ");
+		String data=scan.next();	
 		/*
 		 * ASC
 		 * A → 65
@@ -16,8 +15,9 @@ public class MainClass8 {
 		 * '0' → 48
 		 */
 		
-		// 대문자로 변환 toUpperCase()
-		for(int i=0;i<data.length();i++)
+		// 대문자로 변환 → toUpperCase()
+/*
+ 		for(int i=0;i<data.length();i++)
 		{
 			char c=data.charAt(i);
 			if(c>='a' && c<='z') 	// 소문자라면
@@ -25,16 +25,16 @@ public class MainClass8 {
 				System.out.print((char)(c-32));
 			}
 		}
-		
-		// 소문자로 변환 toLowerCase
+*/		
+		// 소문자로 변환 → toLowerCase
 		for(int i=0;i<data.length();i++)
 		{
 			char c=data.charAt(i);
-			if(c>='A' && c<='A') 	// 대문자라면
+			if(c>='A' && c<='Z') 	// 대문자라면
 			{
 				System.out.print((char)(c+32));
 			}
 		}
-
+		System.out.println((int)'0');
 	}
 }

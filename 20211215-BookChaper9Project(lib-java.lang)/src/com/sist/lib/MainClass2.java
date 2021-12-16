@@ -52,17 +52,16 @@ public class MainClass2 {
 		System.out.println("ID:"+id);
 		System.out.println("Password:"+pwd);
 		
-		// 2.ID,PWD비교
-		// → 오라클에 저장된 데이터라고 생각해보기
+		// 2.ID,PWD비교 → 오라클에 저장된 데이터라고 생각해보기
 		final String myId="admin";
 		final String myPwd="1234";
 		
 		// 3.결과값을 출력
-		// 중첩if
 		// equals → 대소문자를 구분해서 비교
 		// equalsIgnoreCas → 대소문자 구분 없음
-		if(myId.equalsIgnoreCase(id))
-		{
+		
+		// 중첩if
+		if(myId.equalsIgnoreCase(id)) {
 			if(myPwd.equals(pwd)) 	// 비밀번호검색
 			{
 				System.out.println(id+"님 로그인되었습니다.");
@@ -71,15 +70,9 @@ public class MainClass2 {
 			{
 				System.out.println("Password가 틀립니다.");
 			}
-		}
-		else
+		}else
 		{
 			System.out.println("ID가 존재하지 않습니다.");
-
-		}
-		
-		
-		
-		
+		}		
 	}
 } 

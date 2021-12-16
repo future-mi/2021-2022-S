@@ -3,7 +3,7 @@ package com.sist.lib;
 import java.util.*;
 public class MainClass3 {
 	public static void main(String[] args) {
-		
+		// 0(가위),1(바위),2(보)
 		String[] data= {"가위","바위","보"};
 		//1.컴퓨터
 		int com=(int)(Math.random()*3);
@@ -19,14 +19,14 @@ public class MainClass3 {
 		// 3.결과출력
 		switch(user-com)
 		{
-			case -1:
-				System.out.println("컴퓨터ㅏ승");
+			case -1, 2:
+				System.out.println("컴퓨터 승!");
 				break;
-			case -2: case 1:
-				System.out.println("player 승");
+			case -2, 1:
+				System.out.println("player 승!");
 				break;
 			case 0:
-				System.out.println("비겼다");
+				System.out.println("비겼습니다!");
 		}
 		
 	}

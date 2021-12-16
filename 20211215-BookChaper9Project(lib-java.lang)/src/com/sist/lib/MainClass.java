@@ -37,7 +37,7 @@ class Card
 	int num;
 	// 초기화 → {}초기화 블록, 생성자()
 	
-	public Card()
+	public Card() // 디폴트 생성자
 	{
 		kind="★";
 		num=1;

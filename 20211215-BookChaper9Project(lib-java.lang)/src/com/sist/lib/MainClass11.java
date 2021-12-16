@@ -11,17 +11,18 @@ public class MainClass11 {
 		String movie="";
 		long start=System.currentTimeMillis(); 	// log파일
 		// 파일읽기
-		// IOException  CheckException
+		// IOException → CheckException
 		try
 		{
 			FileReader fr=new FileReader("c:\\javaDev\\movie.txt");
 			int i=0;
-			while((i=fr.read())!=-1)
+			while((i=fr.read())!=-1) 	// -1 → EOF
 			{
 				movie+=String.valueOf((char)i);
 			}
 			fr.close();
 			System.out.println(movie);
+			
 		}catch(Exception ex) {}
 		long end=System.currentTimeMillis();
 		System.out.println("수행시간: "+(end-start));
@@ -33,10 +34,11 @@ public class MainClass11 {
 	{
 		StringBuffer sb=new StringBuffer();
 		long start=System.currentTimeMillis(); 	// log파일
-		// 파일읽기
-		// IOException  CheckException
+
+		// IOException → CheckException
 		try
 		{
+			// 파일읽기
 			FileReader fr=new FileReader("c:\\javaDev\\movie.txt");
 			int i=0;
 			while((i=fr.read())!=-1)
@@ -76,8 +78,8 @@ public class MainClass11 {
 	public static void main(String[] args) {
 		MainClass11 m=new MainClass11();
 //		m.stringuse();		 // 수행시간 70227
-//		m.StringBufferUse(); // 수행시간 820
-		m.StringBilderUse(); // 수행시간 899
+		m.StringBufferUse(); // 수행시간 820
+//		m.StringBilderUse(); // 수행시간 899
 		
 	}
 }

@@ -15,14 +15,13 @@ package com.sist.lib;
  * 				ss[0]="admin";
  * 				ss[1]="1234";
  * 				ss[2]="홍길동";
- * 
  */
 public class MainClass9 {
 	public static void main(String[] args) {
 		String data=" Hello Java!! ";
 		System.out.println("문자갯수: "+data.length()+"개"); // 14개
 		String s=data.trim();
-		System.out.println("문자갯수: "+s.length()+"개");	// 12개
+		System.out.println("문자갯수: "+s.length()+"개");	  // 12개
 	
 		int a=100;
 		int b=200;
